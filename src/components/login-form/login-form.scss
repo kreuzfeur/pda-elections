@@ -1,0 +1,122 @@
+.login-form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f9f9;
+
+    .login-form-container {
+        width: 370px;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+
+            .header-title {
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                span {
+                    &:nth-child(1) {
+                        color: #0065b1;
+                    }
+                }
+
+                span {
+                    &:nth-child(2) {
+                        color: #ee3f58;
+                    }
+                }
+            }
+
+            .header-subtitle {
+                font-size: 9px;
+                color: #010101;
+            }
+        }
+
+        .form {
+            padding: 30px 50px;
+            background: #fff;
+            box-shadow: 0 0 0 3px #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .form-title {
+                margin: 0
+            }
+
+            .form-subtitle {
+                font-size: 14px;
+            }
+
+            .form-user {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .avatar {
+                    width: 70px;
+                }
+
+                div {
+                    text-align: center;
+
+                    .form-user-username {
+                        font-size: 20px;
+                        margin: 0;
+                    }
+
+                    padding: 30px 0 0 0;
+                }
+
+            }
+
+            .form-link {
+                color: #004782;
+                font-size: 15px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .form-password {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #9a9a9a;
+                background: #e8f0fe;
+                margin-bottom: 30px;
+            }
+
+            .label {
+                font-size: 10px;
+                color: #9a9a9a;
+                position: relative;
+                top: 25px;
+                left: -105px;
+            }
+
+            .form-submit {
+                color: #fff;
+                background: #005faf;
+                border: none;
+                border-radius: 3px;
+                padding: 10px;
+                width: 100%;
+
+                &:hover {
+                    background: #004782;
+                }
+
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
