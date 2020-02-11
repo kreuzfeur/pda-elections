@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body, html {
+    overflow-x: hidden;
+  }
+  body {
+    text-align: center;
+    color: #222;
+    font-size: 24px; 
+    font-family: sans-serif;
+  }
+  
+  .disabled {
+    background-color: #1264b457!important;
+}
+  .languages {
+    width: 400px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F8F8F8;
+    border: 2px solid #eeeeee;
+    margin: 2px;
+  }
+  
+  .voteCount {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color:#ee3f58;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 4px solid #1264B4;
+  }
+  
+  .language button {
+    color: #fff;
+    background-color: #1264B4;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background: blue;
+    }
+  }
+
+  .votes {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      text-align: center;
+        height: 100vh;
+        justify-content: space-between;
+      h1 {
+          border-bottom: 1px solid #eee;
+          padding: 30px;
+          text-transform: uppercase;
+          font-weight: bold;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          .first {
+              color: #0065b1;
+          }
+          .second {
+              color: #ee3f58;
+          }
+      }
+
+      .footer{
+          padding: 40px 0;
+          width: 100%;
+          background: #e6ebec;;
+      }
+
+      main {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          height: 100%;padding: 30px;
+          justify-content: center;
+      }
+
+      .languages, .charts{
+          width: 600px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 100%;
+          padding: 30px;
+          max-height: 500px;
+
+      }
+
+  }
+
+img {
+    width: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.languageName {
+    font-weight: 900;
+    span {
+        margin-left: 30px;
+    }
+}
+
+.mess {
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
